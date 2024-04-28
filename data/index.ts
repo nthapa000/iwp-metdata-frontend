@@ -7,8 +7,9 @@ export const parameters = [
     "MinimumTemperature",
     "PotentialEvapotranspiration",
     "Precipitation",
-    "Precipitation_2004_2011",
     "ReferenceCropEvapotranspiration",
     "VapourPressure",
     "WetDayFrequency",
   ];
+
+  // Precipitation_2004_2011 , this prototype is not working for this table
