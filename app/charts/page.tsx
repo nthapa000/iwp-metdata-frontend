@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { State, District, Year } from "@/types"
 import Link from "next/link";
 import { parameters } from "@/data";
+
 const Page = () => {
   const [state, setState] = useState([]);
   const [selectedState, setSelectedState] = useState("");
@@ -17,7 +18,7 @@ const Page = () => {
   const [toYear, setToYear] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8001/state")
+    fetch(`http://localhost:8001/state`)
       .then((res) => res.json())
       .then((data) => setState(data))
       .catch((err) => console.log(err));
@@ -73,7 +74,7 @@ const Page = () => {
 
   return (
     <main>
-      <div>
+      <div className="h-full">
         <div className=" justify-center items-center h-screen m-4 mt-10 lg:mt-20">
           <div className=" text-center sm:px-16 xl:px-48 mb-10 md:mb-16">
             <h1 className="mb-4  text-3xl font-extrabold leading-none tracking-wide text-gray-600 md:text-4xl lg:text-4xl dark:text-white">
@@ -88,7 +89,7 @@ const Page = () => {
               <select
                 value={selectedState}
                 onChange={handleStateSelectChange}
-                className="w-8/12 md:w-5/12 lg:w-4/12 rounded-md"
+                className="w-8/12 md:w-5/12 lg:w-4/12 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  p-3"
               >
                 <option>Select a state</option>
                 {state.map((item: State) => (
@@ -105,7 +106,7 @@ const Page = () => {
               <select
                 value={selectedDistrictType}
                 onChange={handleDistrictSelectChange}
-                className="w-8/12 md:w-5/12 lg:w-4/12 rounded-md"
+                className="w-8/12 md:w-5/12 lg:w-4/12 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  p-3"
               >
                 <option value="">
                   Select a district from the selected state
@@ -124,7 +125,7 @@ const Page = () => {
               <select
                 value={selectedDataType}
                 onChange={handleDataSelectChange}
-                className="w-8/12 md:w-5/12 lg:w-4/12 rounded-md"
+                className="w-8/12 md:w-5/12 lg:w-4/12 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  p-3"
               >
                 <option>Select the Data type</option>
                 {parameters.map((parameter, index) => (
@@ -141,7 +142,7 @@ const Page = () => {
               <select
                 value={selectedFromYear}
                 onChange={handleFromSelectChangeYear}
-                className="w-8/12 md:w-5/12 lg:w-4/12 rounded-md"
+                className="w-8/12 md:w-5/12 lg:w-4/12 bg-gray-50 border border-gray-300 text-gray-800 text-sm rounded-lg  p-3"
               >
                 <option value="">Select the year starting from</option>
                 {fromYear.map((year: Year) => (
@@ -156,7 +157,7 @@ const Page = () => {
                 To the Year
               </h1>
               <select
-                className="w-8/12 md:w-5/12 lg:w-4/12 rounded-md"
+                className="w-8/12 md:w-5/12 lg:w-4/12 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  p-3"
                 onChange={handleToYearChange}
               >
                 <option value="">Select the year starting from first</option>
@@ -169,7 +170,7 @@ const Page = () => {
             </div>
           </div>
           {selectedToYear && (
-            <div className="flex justify-center  sm:px-16 xl:px-48 mb-10 md:mb-16">
+            <div className="flex justify-center mt-6 sm:px-16 xl:px-48 mb-10 md:mb-16">
               <div className="mb-4 w-8/12  leading-none lg:text-4xl dark:text-white">
                 <div className="">
                   <Link
