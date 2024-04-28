@@ -11,6 +11,7 @@ Before you begin, ensure that you have met the following requirements
   ```bash
   git clone https://github.com/your-username/iwp-metdata-backend.git
   ```
+- Make sure backend is running
 
 ## Setup
 
