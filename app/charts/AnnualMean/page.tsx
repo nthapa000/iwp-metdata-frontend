@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { calculateAnnualMean} from './utils';
 
+
 export default function AnnualMean() {
   const searchParams = useSearchParams();
   const stateid = searchParams.get('selectedState');
