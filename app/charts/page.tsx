@@ -28,7 +28,7 @@ const Page = () => {
     const selectedValue = event.target.value;
     console.log(selectedValue);
     setSelectedState(selectedValue);
-    fetch(`${process.env.NEXT_PUBLIC_BASE_URL}distict?Stateid=${selectedValue}`)
+    fetch(`${process.env.NEXT_PUBLIC_BASE_URL}district?Stateid=${selectedValue}`)
       .then((res) => res.json())
       .then((data) => setDistricts(data))
       .catch((err) => console.log(err));
