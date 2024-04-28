@@ -18,7 +18,7 @@ const Page = () => {
   const [toYear, setToYear] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:8001/state`)
+    fetch(`${process.env.NEXT_PUBLIC_BASE_URL}state`)
       .then((res) => res.json())
       .then((data) => setState(data))
       .catch((err) => console.log(err));
@@ -28,7 +28,7 @@ const Page = () => {
     const selectedValue = event.target.value;
     console.log(selectedValue);
     setSelectedState(selectedValue);
-    fetch(`http://localhost:8001/distict?Stateid=${selectedValue}`)
+    fetch(`${process.env.NEXT_PUBLIC_BASE_URL}distict?Stateid=${selectedValue}`)
       .then((res) => res.json())
       .then((data) => setDistricts(data))
       .catch((err) => console.log(err));
@@ -44,7 +44,7 @@ const Page = () => {
     const selectedDataValue = event.target.value;
     console.log(selectedDataValue);
     setSelectedDataType(selectedDataValue);
-    fetch(`http://localhost:8001/year?tablename=${selectedDataValue}`)
+    fetch(`${process.env.NEXT_PUBLIC_BASE_URL}year?tablename=${selectedDataValue}`)
       .then((res) => res.json())
       .then((data) => {
         setfromYear(data);
@@ -57,7 +57,7 @@ const Page = () => {
     const selectedFromYearValue = event.target.value;
     setSelectedFromYear(selectedFromYearValue);
     fetch(
-      `http://localhost:8001/yearAfter?tablename=${selectedDataType}&selectedFromYear=${selectedFromYearValue}`
+      `${process.env.NEXT_PUBLIC_BASE_URL}yearAfter?tablename=${selectedDataType}&selectedFromYear=${selectedFromYearValue}`
     )
       .then((res) => res.json())
       .then((data) =>{ 
@@ -170,7 +170,7 @@ const Page = () => {
             </div>
           </div>
           {selectedToYear && (
-            <div className="flex justify-center mt-6 sm:px-16 xl:px-48 mb-10 md:mb-16">
+            <div className="flex justify-center mt-6 sm:px-16 md:px-18 xl:px-48 mb-10 md:mb-16">
               <div className="mb-4 w-8/12  leading-none lg:text-4xl dark:text-white">
                 <div className="">
                   <Link
