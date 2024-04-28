@@ -7,7 +7,7 @@ export default function Home() {
       <div className="justify-center items-center m-4 mt-10 lg:mt-20">
         <div className=" text-left sm:px-16 xl:px-48">
           <h1 className="mb-4  text-3xl font-extrabold leading-none tracking-normal text-gray-700 md:text-4xl lg:text-4xl dark:text-white">
-            Met Data
+            Met Data 
           </h1>
           <p className="mb-6 text-left font-normal text-gray-600 lg:text-xl  dark:text-gray-400 leading-7">
             Meteorological datasets for 13 climate parameters for all districts
