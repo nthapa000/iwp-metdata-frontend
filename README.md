@@ -30,4 +30,8 @@ Before you begin, ensure that you have met the following requirements
     ```bash
    npm install
    ```
+4. Run locally
+   ```bash
+   npm run dev
+   ```
     
