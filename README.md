@@ -1,6 +1,7 @@
 <h2 align='center'>This is Frontend  in NextJS  for the prototype for the Project Met Data for Everyone by India Water Portal</h2>
 
-
+Documentation: https://github.com/nthapa000/100xCohort_0-1_Notes-Documentation/blob/main/IWP-Met%20Data.pdf
+(Will get doc.md soon)
 
 ## Prerequisites
 
@@ -28,5 +29,9 @@ Before you begin, ensure that you have met the following requirements
 3. Install dependencies:
     ```bash
    npm install
+   ```
+4. Run locally
+   ```bash
+   npm run dev
    ```
     
