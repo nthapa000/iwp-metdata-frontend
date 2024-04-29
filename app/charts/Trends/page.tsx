@@ -114,21 +114,21 @@ export default function Trends() {
           <button
             type="button"
             onClick={() => toggleContent(1)}
-            className="py-3 px-4 inline-flex items-center gap-x-2 text-sm lg:text-lg font-semibold rounded-lg border border-transparent text-gray-500 hover:bg-gray-100 hover:text-arghyam disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-neutral-800 md:w-40 "
+            className="py-3 px-4 inline-flex items-center gap-x-2 text-sm lg:text-lg font-semibold rounded-lg border border-transparent text-gray-500 hover:bg-gray-100 hover:text-arghyam disabled:opacity-50 disabled:pointer-events-none md:w-40 "
           >
             Line Chart
           </button>
           <button
             type="button"
             onClick={() => toggleContent(2)}
-            className="py-3 px-4 inline-flex items-center gap-x-2 lg:text-lg text-sm font-semibold rounded-lg border border-transparent text-gray-500 hover:bg-gray-100 hover:text-arghyam disabled:opacity-50 disabled:pointer-events-none  dark:hover:bg-neutral-800 md:w-40"
+            className="py-3 px-4 inline-flex items-center gap-x-2 lg:text-lg text-sm font-semibold rounded-lg border border-transparent text-gray-500 hover:bg-gray-100 hover:text-arghyam disabled:opacity-50 disabled:pointer-events-none   md:w-40"
           >
             Scatter Chart
           </button>
           <button
             type="button"
             onClick={() => toggleContent(3)}
-            className="py-3 px-4 inline-flex items-center gap-x-2 lg:text-lg text-sm font-semibold rounded-lg border border-transparent text-gray-500 hover:bg-gray-100 hover:text-arghyam disabled:opacity-50 disabled:pointer-events-none  dark:hover:bg-neutral-800 md:w-40"
+            className="py-3 px-4 inline-flex items-center gap-x-2 lg:text-lg text-sm font-semibold rounded-lg border border-transparent text-gray-500 hover:bg-gray-100 hover:text-arghyam disabled:opacity-50 disabled:pointer-events-none  md:w-40"
           >
             Bar Chart
           </button>
