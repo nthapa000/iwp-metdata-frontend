@@ -117,7 +117,7 @@ const MobileDropdown = () => {
               )}
               <div className="p-2">
                 <span className="tracking-wider text-xl font-semibold">
-                  <Link href="https://hindi.indiawaterportal.org/">हिंदी</Link>
+                  <Link href="https://iwp-metdata-frontend-hindi.vercel.app/">हिंदी</Link>
                 </span>
                 <span className="m-4 tracking-wider text-xl  ">
                   <a href="/">English</a>
