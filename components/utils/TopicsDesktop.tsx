@@ -26,34 +26,34 @@ const TopicsDesktop = () => {
         </svg>
       </a>
       {isTopicOpen && (
-        <div className="absolute z-10  left-0  mt-2 w-60 bg-white border border-gray-200 rounded-md shadow-lg dark:bg-gray-800 dark:border-gray-600">
+        <div className="absolute z-10  left-0  mt-2 w-60 bg-white border border-gray-200 rounded-md shadow-lg ">
           <a
             href="/"
-            className="block px-4 py-2 text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
+            className="block px-4 py-2 text-gray-800 hover:bg-gray-100 "
           >
             Solid Waste
           </a>
           <a
             href="/"
-            className="block px-4 py-2 text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
+            className="block px-4 py-2 text-gray-800 hover:bg-gray-100 "
           >
             Rainwater Harvesting
           </a>
           <a
             href="/"
-            className="block px-4 py-2 text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
+            className="block px-4 py-2 text-gray-800 hover:bg-gray-100 "
           >
             Rural Sanitation
           </a>
           <a
             href="/"
-            className="block px-4 py-2 text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
+            className="block px-4 py-2 text-gray-800 hover:bg-gray-100 "
           >
             Agriculture
           </a>
           <a
             href="/"
-            className="block px-4 py-2 text-gray-800 hover:bg-gray-100  dark:hover:bg-gray-700"
+            className="block px-4 py-2 text-gray-800 hover:bg-gray-100  "
           >
             View all Topics
           </a>
