@@ -231,7 +231,7 @@ export default function Trends() {
           </ResponsiveContainer>
           <div className="flex justify-center mt-4">
             <button onClick={handleSaveClick} className="hover:text-arghyam ">
-              Download Chart as PDF
+              Download Chart as Image
             </button>
           </div>
         </div>
